@@ -1,0 +1,7 @@
+data/
+*.zip
+notebook_backups/
+.ipynb_checkpoints/
+__pycache__/
+.env
+.streamlit/secrets.toml
