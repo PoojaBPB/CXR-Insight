@@ -16,9 +16,11 @@
 
 ## About the Project
 
-**CXR Insight** is a machine learning and deep learning project for automated tuberculosis (TB) detection from chest X-ray images.
+## About the Project
 
-The project compares traditional machine-learning approaches with convolutional neural networks, evaluates model performance at a screening-focused operating threshold, examines generalisation on an independent chest X-ray dataset, and uses Grad-CAM++ to explore the image regions influencing model predictions.
+**CXR Insight** is a machine learning and deep learning project for automated tuberculosis (TB) detection from chest X-ray images using the **TBX11K dataset**.
+
+The project compares HOG-based SVM and Random Forest models with ResNet50 and MobileNetV2, evaluates model performance at a screening-focused operating threshold, tests generalisation on the independent **Shenzhen chest X-ray dataset**, and uses Grad-CAM++ to explore the image regions influencing ResNet50 predictions.
 
 ---
 
@@ -70,7 +72,7 @@ Grad-CAM++ Explainability
 
 ## Internal Validation Results
 
-The models were compared at an operating point requiring at least **90% sensitivity**.
+The four models were evaluated on the cleaned **TBX11K validation set** and compared at an operating point requiring at least **90% sensitivity**.
 
 | Model | Sensitivity | Specificity | F1-score | AUROC |
 |---|---:|---:|---:|---:|
@@ -79,7 +81,7 @@ The models were compared at an operating point requiring at least **90% sensitiv
 | ResNet50 | 0.900 | 0.9674 | 0.8333 | 0.9873 |
 | MobileNetV2 | 0.900 | 0.9379 | 0.7516 | 0.9667 |
 
-SVM achieved the strongest internal screening-focused performance, while ResNet50 was the strongest deep-learning model.
+SVM achieved the strongest internal screening-focused performance on **TBX11K**, while ResNet50 was the strongest deep-learning model.
 
 ---
 
