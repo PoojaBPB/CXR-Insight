@@ -16,7 +16,6 @@
 
 ## About the Project
 
-## About the Project
 
 **CXR Insight** is a machine learning and deep learning project for automated tuberculosis (TB) detection from chest X-ray images using the **TBX11K dataset**.
 
